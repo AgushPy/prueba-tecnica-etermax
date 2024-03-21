@@ -5,8 +5,6 @@ import lombok.*;
 import java.time.LocalDateTime;
 
 @Data
-@Getter
-@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Llamada {
@@ -18,7 +16,7 @@ public class Llamada {
     public Llamada(int duracion, LocalDateTime fechaHora){
         this.duracion = duracion;
         this.fechaHora = fechaHora;
-        this.tipoLlamada = TipoLlamadaFactory.createTipoLlamada(fechaHora);
+        this.tipoLlamada = TipoLlamadaFactory.crearTipoLlamada(fechaHora);
     }
 
     public Double calcularCosto(){

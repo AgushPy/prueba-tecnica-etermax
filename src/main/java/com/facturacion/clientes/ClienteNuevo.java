@@ -4,8 +4,6 @@ import com.facturacion.llamadas.Llamada;
 import com.facturacion.llamadas.Nocturna;
 import com.facturacion.llamadas.Regular;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.util.ArrayList;
 

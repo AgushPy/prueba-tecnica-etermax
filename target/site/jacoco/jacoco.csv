@@ -1,0 +1,9 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+FacturacionTelefonicaProject,com.facturacion.clientes,ClienteNuevo,30,44,6,4,1,10,7,5,4,3
+FacturacionTelefonicaProject,com.facturacion.clientes,Cliente,164,34,30,2,5,10,26,4,11,3
+FacturacionTelefonicaProject,com.facturacion,Main,7,0,0,0,3,0,2,0,2,0
+FacturacionTelefonicaProject,com.facturacion.llamadas,Nocturna,61,16,8,0,0,3,9,3,5,3
+FacturacionTelefonicaProject,com.facturacion.llamadas,Regular,64,13,8,0,0,3,10,2,6,2
+FacturacionTelefonicaProject,com.facturacion.llamadas,TipoLlamadaFactory,3,28,2,6,1,5,3,3,1,1
+FacturacionTelefonicaProject,com.facturacion.llamadas,Llamada,178,25,26,0,5,8,25,4,12,4
+FacturacionTelefonicaProject,com.facturacion.llamadas,FinSemana,64,13,8,0,0,3,10,2,6,2

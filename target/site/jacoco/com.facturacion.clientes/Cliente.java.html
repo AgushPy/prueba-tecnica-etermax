@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Cliente.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">FacturacionTelefonicaProject</a> &gt; <a href="index.source.html" class="el_package">com.facturacion.clientes</a> &gt; <span class="el_source">Cliente.java</span></div><h1>Cliente.java</h1><pre class="source lang-java linenums">package com.facturacion.clientes;
+
+import com.facturacion.llamadas.Llamada;
+import lombok.*;
+
+import java.util.ArrayList;
+
+<span class="nc bnc" id="L8" title="All 30 branches missed.">@Data</span>
+<span class="nc" id="L9">@AllArgsConstructor</span>
+<span class="nc" id="L10">@NoArgsConstructor</span>
+public class Cliente {
+<span class="nc" id="L12">    private Long id;</span>
+<span class="nc" id="L13">    private String nombre;</span>
+<span class="fc" id="L14">    private ArrayList&lt;Llamada&gt; historialLlamadas;</span>
+
+<span class="fc" id="L16">    public Cliente(String nombre,ArrayList&lt;Llamada&gt; historialLlamadas){</span>
+<span class="fc" id="L17">        this.nombre = nombre;</span>
+<span class="fc" id="L18">        this.historialLlamadas = historialLlamadas;</span>
+<span class="fc" id="L19">    }</span>
+
+    public double calcularCargo(){
+<span class="fc" id="L22">        double valorFactura = 0.0;</span>
+<span class="fc bfc" id="L23" title="All 2 branches covered.">        for (Llamada llamada : getHistorialLlamadas()) {</span>
+<span class="fc" id="L24">            valorFactura += llamada.calcularCosto();</span>
+<span class="fc" id="L25">        }</span>
+<span class="fc" id="L26">        return valorFactura;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
